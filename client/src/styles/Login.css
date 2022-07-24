@@ -1,0 +1,59 @@
+.body-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding-top:3%;
+    /* background-color: aqua; */
+}
+.login-image-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top:10vh;
+}
+.login-buttons-container>img{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    /* background-color: aqua; */
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-buttons-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-button{
+    display: flex;
+    margin:2vh!important;
+}
+
+
+.login-field{
+    /* display: flex; */
+    margin:1vh!important;
+    color: var(--rouge-sombre)!important;
+    /* height:50%; */
+    /* padding: 10px; */
+    /* background-color: pink; */
+}
+.login-field .MuiInputLabel-root{
+    display: flex;
+    padding:0px!important;
+    font-size:large;
+    /* height:100%; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+

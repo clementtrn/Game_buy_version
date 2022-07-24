@@ -1,0 +1,72 @@
+.search{
+  background-color:   #F7F7F7;
+  width:80%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  padding:1vh 10%;
+}
+
+.search-field{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:80%;
+  
+}
+
+body{
+  --gris-clair:#f1f1f1;
+  --gris-moyen:#9F9F9F;
+  --gris-sombre:#4A4848;
+  --rouge-flash: #ff0000;
+  --rouge-sombre:#BF0000;
+  --vert-flash: #4dff4d;
+  --font-data: bold min(max(10px,1vw),15px)  Arial,sans-serif;
+}
+
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.example-appear {
+  opacity: 0.01;
+}
+.example-exit {
+  opacity: 0.01;
+}
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+
+@keyframes clignoter {
+  0%   { filter: brightness(0.9); }
+  40%   {filter: brightness(1.3); }
+  100% {filter: brightness(0.9); }
+}
+
+.clignotant{
+  animation-duration: 1.5s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+  background-color:#E26F00!important;
+}

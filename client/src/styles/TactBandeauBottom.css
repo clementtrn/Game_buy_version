@@ -1,0 +1,306 @@
+.bandeau-bottom-tact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    height:14vh;
+    min-height:100px; 
+    background-color: var(--gris-clair);
+    width: 100%;
+    border-radius:  min(30px,2vw) min(30px,2vw) 0px 0px;
+    box-shadow:  0px -2px 5px var(--gris-moyen);
+    padding: 2px 0;
+    z-index: 10;
+    min-width: 1320px;
+    overflow: hidden;
+}
+
+.bandeau-bottom-tact>.boutons-container{
+    display: flex;
+    min-height:100px; 
+    flex-direction: row;
+    height: fit-content;
+    width:65%;
+    min-width: 1000px;
+
+    align-items: center;
+    justify-content: space-between;
+    margin:10px;
+    /* background-color: teal; */
+}
+
+.fleches-container{
+    display: grid;
+    grid-gap: 0px;
+    width: 100px;
+    /* min-height: 100px;
+    min-width: 100px; */
+    margin-left:max(25px,2%);
+    justify-content: center;
+    align-content: center;
+    height:100px;
+    padding:0px!important;    
+    /* background-color: green; */
+
+    /* grid-template-columns: auto auto auto auto; */
+
+}
+.fleches-container>.fleche{
+    display: flex;
+    width: 33px !important;
+    height:33px!important;
+    /* background-color: turquoise; */
+    padding:0px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fleches-container>.fleche>.MuiIconButton-label>.MuiSvgIcon-root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:33px;
+    height:33px;
+    /* background-color:red ; */
+    padding:0px!important;
+}
+.fleches-container>.fleche>.circle-fleche{
+    display: flex;
+    background-color: var(--gris-sombre);
+    border-radius: 100%;
+    border:3px solid white;
+    width: 50%;
+    height: 50%;
+}
+
+.fleches-container>.fleche-gauche{
+    
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 0;
+    grid-column-end: 1;
+    transform:rotate(180deg);
+}
+.fleches-container>.fleche-droite{
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.fleches-container>.fleche-up{
+    grid-row-start: 0;
+    grid-row-end:1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    transform:rotate(-90deg);
+}
+.fleches-container>.fleche-bottom{
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    transform:rotate(90deg);
+}
+
+.fleches-container>.fleche-center{
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandeau-bottom-tact>.boutons-container>div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px!important;
+    margin:2px 10px!important;
+    max-width: 250px!important;
+    
+    height:100%;
+    padding: 0px!important;
+    width:90%!important;
+    
+}
+.bandeau-bottom-tact>.boutons-container>div>.bouton-action{
+  width: 100%;
+  height: 100%;
+  padding: 0px!important;
+  border:1px solid var(--gris-moyen);
+  border-radius: 10px;
+}
+
+.bandeau-bottom-tact>.boutons-container>div>.bouton-action:disabled{
+    border-color:transparent;
+}
+
+.bandeau-bottom-tact>.boutons-container>div>.bouton-action>.MuiToggleButton-label {
+    display: flex;
+    flex-direction: column!important;
+    text-transform: none;
+    height:12vh;
+    padding:0px!important;
+    justify-content: flex-start!important;
+    color:black;
+}
+
+
+.MuiToggleButton-label>.title-action{
+    display: flex;
+    flex:1;
+    font:var(--font-data);
+    font-style: italic;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+.MuiToggleButton-label>img{
+    display: flex;
+    flex:3;
+    max-height: 60%;
+    object-fit: contain;
+}
+
+.MuiToggleButton-label>.count-action{
+    display: flex;
+    flex:0;
+    font:var(--font-data);
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    padding:0;
+    bottom:0
+}
+
+.bulle-info{
+    display: flex!important;
+    
+    /* flex-direction: row!important; */
+}
+.MuiDialog-root{
+     display: flex;
+     /* position: absolute; */
+     bottom: max(12vh,100px)!important;
+     align-items:  flex-end;
+     justify-content: center;
+     width: 100%;
+    min-width: 1000px;
+     /* background-color: blue; */
+    min-height:100px; 
+    flex-direction: row;
+    /* left:calc(max(25px,2%) + 100px + (max(100%,1320px) - max(25px,2%) - max(25px,2%)  - max(65%,1000px) - 100px - max(15%,150px) - 80% * 65%) / 2)!important; */
+    
+    
+}
+.MuiDialog-container{
+    display: flex;
+
+    /* background-color: red; */
+    width: 100%;
+}
+
+.MuiDialogContent-root{
+    display: flex;
+    /* background-color: teal; */
+    align-items: center;
+
+}
+.MuiDialogContentText-root{
+    display: flex;
+    flex-direction: column;
+}
+.MuiDialogContentText-root>.title-action{
+    display: flex;
+    
+    flex:1;
+    font:var(--font-data);
+    font-style: italic;
+    color:black;
+    font-size: 1em;
+    text-align: center;
+    
+}
+.MuiDialogContent-root>img{
+    display: flex;
+    /* flex:3; */
+    max-height: 80%;
+    max-width: 25%;
+    object-fit: contain;
+    margin-right: 5%;
+    /* background-color: tomato; */
+}
+.MuiDialogActions-root{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.MuiDialogActions-root>.MuiButtonBase-root {
+    display: flex;
+    /* background-color: tomato; */
+    width: 100%;
+}
+.boutons-valider-container{
+    display: flex;
+    width: 15%;
+    min-height: 100px;
+    min-width: 150px;
+    margin-right:max(25px,2%);
+    justify-content: space-evenly;
+    align-items: center;
+    right:0;
+    /* background-color: pink; */
+}
+
+.bouton-valider{
+    border-radius: 100%!important;
+    height:8vh;
+    width: 8vh;
+    min-height: 80px;
+    min-width: 80px;
+    padding:0px!important;
+    border:5px solid white!important;
+}
+.bouton-valider>.MuiButton-label{
+    display: flex;
+    position: absolute;
+    /* background-color: teal; */
+    height:100%;
+    width:100%;
+    padding:0px!important;
+    justify-content: center!important;
+    align-items: center;
+}
+
+.bouton-valider>.MuiButton-label>img{
+    display: flex;
+    
+    max-height: 70%; 
+    height:100%; 
+} 
+
+.bouton-valider:enabled{
+    animation-duration: 1.5s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+    
+}
+.bouton-valider.rouge:enabled{
+    background: linear-gradient(12deg, rgba(198,0,0,1) 0%, rgba(252,80,80,1) 70%, rgba(255,167,167,1) 100%);
+}
+.bouton-valider.rouge:active{
+    background: linear-gradient(192deg, rgba(198,0,0,1) 0%, rgba(252,80,80,1) 70%, rgba(255,167,167,1) 100%);
+}
+.bouton-valider.vert:enabled{
+    background: linear-gradient(12deg, rgba(0,198,19,1) 0%, rgba(140,238,78,1) 68%, rgba(169,255,167,1) 100%);
+}
+.bouton-valider.vert:active{
+    background: linear-gradient(192deg, rgba(0,198,19,1) 0%, rgba(140,238,78,1) 68%, rgba(169,255,167,1) 100%);
+}
+.bouton-valider:disabled{
+    background: var(--gris-sombre);
+}
+

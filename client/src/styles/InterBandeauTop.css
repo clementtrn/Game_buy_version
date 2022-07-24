@@ -1,0 +1,282 @@
+.bandeau-top-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height:14vh;
+    min-height:100px; 
+    background-color: var(--gris-clair);
+    width: 49%;
+    min-width: 100px;
+    border-radius: 0px 0px min(30px,2vw) min(30px,2vw) ;
+    box-shadow:  0px 2px 5px var(--gris-moyen);
+    z-index: 10;
+    right:0
+    /* transition: 1s ease-in; */
+}
+
+.bandeau-top-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height:14vh;
+    min-height:100px; 
+    background-color: var(--gris-clair);
+    width: 49%;
+    min-width: 100px;
+    border-radius: 0px 0px min(30px,2vw) min(30px,2vw) ;
+    box-shadow:  0px 2px 5px var(--gris-moyen);
+    z-index: 10;
+    left:0;
+    overflow: hidden;
+}
+
+.bandeau-top-left>.MuiToggleButtonGroup-root{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.bandeau-top-left>.bouton-vue-container>.bouton-vue{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    /* border: none; */
+}
+.bandeau-top-left>.bouton-vue-container>.bouton-vue>.MuiToggleButton-label{
+    display: flex;
+    flex-direction: column;
+    height:80%;
+    justify-content: flex-start!important;
+    align-items:  center!important;
+    /* background-color: teal; */
+
+}
+
+.bandeau-top-left>.bouton-vue-container>.bouton-vue>.MuiToggleButton-label>.label-vue{
+    cursor: pointer;
+    /* background-color: red; */
+    /* font:var(--font-data); */
+    font-style: italic;
+    color:black;
+    width: 100%;
+    /* height: 100%; */
+    /* font-size: 1em; */
+    justify-content: center!important;
+    align-items: center!important;
+    text-align: center;
+    display: flex;
+    /* flex:1!important; */
+    height: 50%;
+
+    /* padding: 5px 0px; */
+}
+.bandeau-top-left>.bouton-vue-container>.bouton-vue>.MuiToggleButton-label:nth-child(1){
+    display: flex;
+    height: 100%;
+
+    /* background-color: green; */
+}
+
+.indicateur{
+    display: flex;
+    position: absolute;
+    top:5%;
+    right:5%;
+    min-width:20px;
+    min-height: 20px;
+    width:3vh;
+    height:3vh;
+    border-radius: 100%;
+    border:3px solid white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px #B1B1B1B1;
+}
+
+.indicateur.rouge{
+    background: linear-gradient(12deg, rgba(198,0,0,1) 0%, rgba(252,80,80,1) 70%, rgba(255,167,167,1) 100%);
+}
+.indicateur.vert{
+    background: linear-gradient(12deg, rgba(0,198,19,1) 0%, rgba(140,238,78,1) 68%, rgba(169,255,167,1) 100%);
+}
+
+.indicateur>img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    transition:1s;
+    /* background-color: green; */
+    /* background-color: blue; */
+}
+
+/* .cases-container{
+    display: flex;
+    min-height:100px; 
+    flex-direction: row;
+    height: fit-content;
+    /* background-color: yellowgreen; 
+    width: 100%;
+}
+
+.case-panel{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    min-width: max(30px,max-content);
+    height: fit-content;
+    /* min-height:60px;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 15px 15px; */
+    /* background-color: turquoise; 
+
+}
+
+
+.case-panel>.label-title{
+    font:var(--font-data);
+    font-style: italic;
+    color:black;
+    flex:0;
+    width: 100%;
+    padding: 5px 0px;
+    /* height:40%; 
+    /* margin-top:0; 
+}
+
+.case-value{
+    /* background-color:red;
+    /* min-width: 30px; 
+    width: 70%;
+    max-width: min(80px,80%);
+    padding: 4px 2px;
+    font:var(--font-data);
+    flex:0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 42%, rgba(230,230,230,1) 72%, rgba(159,155,155,1) 100%);
+    border:1px solid var(--gris-clair);
+}
+
+.donnees-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sous-donnees-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top:2px;
+    
+}
+.donnees-container>.case-panel{
+    margin-top:2px;
+    padding:0 15px;
+}
+
+.sous-donnees-container>.case-panel,.donnees-container>.case-panel{
+    
+    display: flex;
+    flex:1;
+    width: 80%;
+    padding:0 15px;
+}
+.sous-donnees-container>.case-panel>.label-title,.donnees-container>.case-panel>.label-title{
+    display: flex;
+    flex:4;
+    font-weight: normal;
+    /* background-color: powderblue; 
+    color:#4A4848;
+    padding:0px;
+    /* padding: 5px 0px; 
+}
+
+.sous-donnees-container>.case-panel> .case-value,.donnees-container>.case-panel>.case-value{
+    display: flex;
+    flex:1;
+    justify-content: center;
+} */
+
+/* .icone-num-pompier{
+    position: absolute; 
+    color:var(--rouge-sombre);
+    margin-top:10px;
+    /* background-color: teal; 
+}
+
+.label-num-pompier{
+    /* padding-bottom: 2px; 
+    z-index: 1;
+    font:var(--font-data);
+    color:white;
+    margin-top:15px;
+    text-shadow:  1px  1px  black;
+}
+
+/* .MuiSvgIcon-fontSizeLarge{
+    transform: scale(1.5);
+} 
+
+.case-panel>ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* background-color: red; 
+    height:40px;
+    max-width: 90%;
+    top:20px;
+}
+.case-panel>ul>li {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #4A4848;
+    color:white;
+    padding:0;
+    margin:0;
+    border:1px solid white ;
+    font-size: 10px;
+    /* transform: translateX(-20px); 
+}
+
+.case-panel>.donnees-container>.feu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    top:5%;
+    height:10%;
+    width:100%;
+    background-color:black;
+    border-radius: 15%;
+}
+.feu>div{
+    position: relative;
+    width: 20px;
+    height:20px;
+    margin: 3px;
+    border-radius: 100%;
+   
+} */

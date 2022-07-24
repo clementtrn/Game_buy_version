@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    position:absolute;
+    min-width: 400px;
+    min-height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    /* top:max(115px,14vh); */
+    /* transition:opacity 2s; */
+}
+.tableau{
+    width: 90%!important;
+    max-height:60vh!important;
+}
+
+th{
+    font-weight: bold!important;
+    background-color:  var(--gris-clair)!important;
+}
+
+td{
+    padding:5px!important;
+}
+.MuiTableCell-root{
+    min-width: 75px!important;
+}
+.MuiSelect-root,.MuiInputBase-root,.MuiTextField-root{
+    min-width: 60px!important;
+    /* transition: 0.7s; */
+    width: 100%!important;
+    font-size: 1em!important;
+
+}
+.MuiOutlinedInput-input,.MuiInputBase-input{
+    padding-top:15px!important;
+    padding-bottom:15px!important;
+}
+.MuiSelect-root:hover:enabled,.MuiSelect-root:focus{
+    background-color: white!important;
+    color:black!important;
+}
+.empty{
+    font-style: italic!important;
+    color:var(--gris-moyen)!important; 
+}
+
+.Mui-disabled{
+    font-style: italic!important;
+    background-color: var(--gris-clair)!important;
+}
+
+ .MuiTextField-root{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100px!important;
+}

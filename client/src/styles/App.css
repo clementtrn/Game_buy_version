@@ -1,0 +1,30 @@
+body{
+  --gris-clair:#f1f1f1;
+  --gris-moyen:#868686;
+  --gris-sombre:#4A4848;
+  --rouge-flash: #ff0000;
+  --rouge-moyen:red;
+  --rouge-sombre:#BF0000;
+  --vert-flash: #4dff4d;
+  --font-data: bold min(max(10px,1vw),15px)  Arial,sans-serif;
+}
+
+
+@keyframes clignoter {
+  0%   { filter: brightness(0.9); }
+  40%   {filter: brightness(1.2); }
+  100% {filter: brightness(0.9); }
+}
+
+.clignotant{
+  animation-duration: 1.5s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+  /* background-color:#E26F00!important; */
+  cursor: pointer;
+}
+
+.animation-reverted{
+  animation-direction: reverse;
+}

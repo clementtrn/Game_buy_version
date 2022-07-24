@@ -1,0 +1,137 @@
+.bandeau-bottom-inter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    height:14vh;
+    min-height:120px; 
+    background-color: var(--gris-clair);
+    width: 100%;
+    border-radius:  min(30px,2vw) min(30px,2vw) 0px 0px;
+    box-shadow:  0px -2px 5px var(--gris-moyen);
+    padding: 2px 0;
+    z-index: 10;
+    transition: 2s;
+    /* background-color: green; */
+    overflow:hidden;
+}
+
+.bandeau-bottom-inter.left{
+    width: 20%; 
+    left:0;
+}
+
+.bandeau-bottom-inter.right{
+    width: 75%;
+    right:0
+}
+
+/* .boutons-valider-container{
+    display: flex;
+    position: absolute;
+    width: 15%;
+    min-height: 100px;
+    min-width: 200px;
+    margin-right:2%;
+    justify-content: space-evenly;
+    align-items: center;
+    right:0;
+}
+
+.bouton-valider{
+    border-radius: 100%!important;
+    height:8vh;
+    width: 8vh;
+    min-height: 80px;
+    min-width: 80px;
+    padding:0px!important;
+    border:5px solid white!important;
+    
+}
+.bouton-valider>.MuiButton-label{
+    display: flex;
+    position: absolute;
+    height:100%;
+    width:100%;
+    padding:0px!important;
+    justify-content: center!important;
+    align-items: center;
+}
+
+.bouton-valider>.MuiButton-label>img{
+    display: flex;
+    
+    max-height: 70%; 
+    height:100%; 
+}  */
+.bandeau-bottom-inter>.case-panel{
+    display: flex;
+    width: 30%;
+    align-items: flex-start;
+    height:90%;
+}
+.couts-container{
+    display: flex;
+    /* position: absolute; */
+    width: 100%;
+    /* height:80%; */
+    /* margin-left:1%; */
+    left:0;
+    /* flex-direction: column;*/
+    justify-content: space-evenly; 
+    /* background-color: pink; */
+    min-width: 190px;
+    /* max-width: 350px; */
+}
+.couts-container>div{
+    width: 90%;
+    display: flex;
+
+    /* background-color: green; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.label-cout-inter{
+    display: flex;
+    justify-content: space-between;
+    font:var(--font-data);
+    font-style: italic;
+    font-weight: normal;
+    width: 80%;
+    /* background-color: yellow; */
+}
+.label-cout-inter-eur{
+    /* position: absolute; */
+    display: flex;
+    color:var( --rouge-moyen);
+    right:0;
+    /* background-color: black; */
+}
+
+
+.budgets-container{
+    font-weight: bold;
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height:90%;
+    /* background-color: green; */
+}
+.budgets-container>.donnees-container{
+    min-width: 250px;
+}
+.budgets-container>.donnees-container>.case-panel>.case-value{
+    display: flex;
+    min-width: 70px;
+    width: 100%;
+    max-width: min(100px,100%);
+    padding: 4px 2px;
+    font:var(--font-data);
+    flex:0;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 42%, rgba(230,230,230,1) 72%, rgba(159,155,155,1) 100%);
+    border:1px solid var(--gris-clair);
+}
